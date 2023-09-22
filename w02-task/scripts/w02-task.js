@@ -3,32 +3,32 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-let fullname = "Luke Marshall";
+const fullName = "Luke Marshall";
 let currentyear = new Date().getFullYear();
-let profilePicture = "images/headshot.png";
-let singlefood = "ice cream";
+let profilePicture = "images/Headshot.png";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById ("name");
 const foodElement = document.getElementById ("food");
 const yearElement = document.querySelector ("#year");
-const photoElement = document.querySelector("#profilePicture");
+const imageElement = document.querySelector('img');
 
 /* Step 4 - Adding Content */
-nameElement.innerHTML = `<strong>${fullname}</strong>`;
+nameElement.innerHTML = `<strong>${fullName}</strong>`;
 yearElement.textContent = currentyear;
-photoElement.setAttribute ("src", profilePicture);
-photoElement.setAttribute ("alt", `profile picture of ${fullname}` );
+imageElement.setAttribute("src", profilePicture);
+imageElement.setAttribute("alt", `Profile image of ${fullName}`);
 
 /* Step 5 - Array */
-let favoriteFoods = ["Pizza", "Sushi", "Chocolate", "Burgers", "Ice Cream"];
-let singleFavoriteFood = "Pasta";
-favoriteFoods.push(singleFavoriteFood);
-let foodList = favoriteFoods.join('<br>');
-foodElement.innerHTML += `<br>${foodList}`;
+const favoriteFoods = ["Pizza", "Sushi", "Chocolate", "Burgers", "Ice Cream"];
+foodElement.innerHTML = favoriteFoods.join("<br>");
+
+const newFood = "ice cream";
+favoriteFoods.push(newFood);
+foodElement.innerHTML += `<br>${newFood}`;
+
 favoriteFoods.shift();
-foodList = favoriteFoods.join('<br>');
-foodElement.innerHTML = `<br>${foodList}`;
+foodElement.innerHTML += "<br>" + favoriteFoods.join("<br>");
+
 favoriteFoods.pop();
-foodList = favoriteFoods.join('<br>');
-foodElement.innerHTML += `<br>${foodList}`;
+foodElement.innerHTML += "<br>" + favoriteFoods.join("<br>");
