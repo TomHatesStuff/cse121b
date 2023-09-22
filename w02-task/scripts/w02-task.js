@@ -10,12 +10,12 @@ const singlefood = "ice cream";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById ("name");
-const foodElement = document.getElementId ("food");
+const foodElement = document.getElementById ("food");
 const yearElement = document.querySelector ("#year");
-const photoElement = document.querySelector("profilePicture");
+const photoElement = document.querySelector("#profilePicture");
 
 /* Step 4 - Adding Content */
-nameElement.innerHTML = `<strong> $(fullname)</strong>`;
+nameElement.innerHTML = `<strong>${fullname}</strong>`;
 yearElement.textContent = currentyear;
 photoElement.setAttribute ("src", profilePicture);
 photoElement.setAttribute ("alt", `profile picture of ${fullname}` );
