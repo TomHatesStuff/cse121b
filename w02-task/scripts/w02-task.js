@@ -3,10 +3,10 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-const fullname = "Luke Marshall";
-const currentyear = Date().getFullYear();
-const profilePicture = "images/headshot.png";
-const singlefood = "ice cream";
+let fullname = "Luke Marshall";
+let currentyear = new Date().getFullYear();
+let profilePicture = "images/headshot.png";
+let singlefood = "ice cream";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById ("name");
@@ -21,10 +21,10 @@ photoElement.setAttribute ("src", profilePicture);
 photoElement.setAttribute ("alt", `profile picture of ${fullname}` );
 
 /* Step 5 - Array */
-const favoriteFoods = ["Pizza", "Sushi", "Chocolate", "Burgers", "Ice Cream"];
-const singleFavoriteFood = "Pasta";
+let favoriteFoods = ["Pizza", "Sushi", "Chocolate", "Burgers", "Ice Cream"];
+let singleFavoriteFood = "Pasta";
 favoriteFoods.push(singleFavoriteFood);
-const foodList = favoriteFoods.join('<br>');
+let foodList = favoriteFoods.join('<br>');
 foodElement.innerHTML += `<br>${foodList}`;
 favoriteFoods.shift();
 foodList = favoriteFoods.join('<br>');
