@@ -1,11 +1,12 @@
 /* LESSON 3 - Programming Tasks */
 
 /* FUNCTIONS */
+
+/* Function Definition - Add Numbers */
 function add(number1, number2) 
 {
     return number1 + number2;
 }
-/* Function Definition - Add Numbers */
 
 function AddNumbers ()
 {
