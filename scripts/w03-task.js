@@ -31,7 +31,7 @@ function SubtractNumbers ()
 document.querySelector("#subtractNumber").addEventListener("click", SubtractNumbers)
 
 /* Arrow Function - Multiply Numbers */
-const multiply = (factor1, factor2) => factor1 * factor2;
+const multiply = (number1, number2) => number1 * number2;
 const multiplyNumbers = () => {
     let factor1 = Number(document.querySelector("#factor1").value);
     let factor2 = Number(document.querySelector("#factor2").value);
@@ -41,7 +41,7 @@ const multiplyNumbers = () => {
   document.querySelector("#multiplyNumbers").addEventListener("click", multiplyNumbers);
 
 /* Open Function Use - Divide Numbers */
-function divide(number1, number2)
+function divide(number2, number1)
 {
     return number1 / number2;
 }
