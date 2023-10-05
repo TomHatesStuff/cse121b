@@ -62,7 +62,7 @@ document.querySelector("#year").textContent = currentYear;
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 
-let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+let numbersArray = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 document.querySelector("#array").textContent = numbersArray;
 
 /* Output Odds Only Array */
